@@ -318,7 +318,8 @@ mod tests {
     #[test]
     fn paths_live_under_the_dubplate_data_dir() {
         assert!(model_path().to_string_lossy().contains("models"));
-        assert!(runtime_dir().ends_with("dubplate/runtime"));
+        // (the folder is "dubplate" on Linux and "Dubplate" on Windows and macOS)
+        assert_eq!(runtime_dir(), crate::paths::data_dir().join("runtime"));
     }
 
     /// Manual check of the installed runtime and model:

@@ -36,19 +36,33 @@ pub struct Dirs {
     pub cache: PathBuf,
 }
 
+/// Whether `p` is an absolute path on `os`. Decided by `os`'s rules rather than the running system's, so the rules
+/// for every platform can be tested on any of them (Windows does not count `/home/dj` as absolute, for one).
+fn is_absolute_on(os: Os, p: &str) -> bool {
+    match os {
+        Os::Windows => {
+            let b = p.as_bytes();
+            let drive = b.len() >= 3 && b[0].is_ascii_alphabetic() && b[1] == b':' && matches!(b[2], b'\\' | b'/');
+            drive || p.starts_with("\\\\") || p.starts_with("//")
+        }
+        Os::Linux | Os::MacOs => p.starts_with('/'),
+    }
+}
+
 /// An absolute path from an environment variable, or None (XDG says to ignore relative ones).
-fn absolute(env: &dyn Fn(&str) -> Option<String>, key: &str) -> Option<PathBuf> {
-    env(key).filter(|v| !v.is_empty()).map(PathBuf::from).filter(|p| p.is_absolute())
+fn absolute(os: Os, env: &dyn Fn(&str) -> Option<String>, key: &str) -> Option<PathBuf> {
+    env(key).filter(|v| is_absolute_on(os, v)).map(PathBuf::from)
 }
 
 /// Resolves the folders for `os` from an environment lookup. Separate from [`dirs`] so every platform's
 /// rules can be tested anywhere.
 pub fn resolve(os: Os, env: &dyn Fn(&str) -> Option<String>) -> Dirs {
-    let home = || absolute(env, "HOME").or_else(|| absolute(env, "USERPROFILE")).unwrap_or_else(|| PathBuf::from("."));
+    let home =
+        || absolute(os, env, "HOME").or_else(|| absolute(os, env, "USERPROFILE")).unwrap_or_else(|| PathBuf::from("."));
     match os {
         Os::Linux => {
             let under = |var: &str, fallback: &str| {
-                absolute(env, var).unwrap_or_else(|| home().join(fallback)).join("dubplate")
+                absolute(os, env, var).unwrap_or_else(|| home().join(fallback)).join("dubplate")
             };
             Dirs {
                 config: under("XDG_CONFIG_HOME", ".config"),
@@ -57,8 +71,8 @@ pub fn resolve(os: Os, env: &dyn Fn(&str) -> Option<String>) -> Dirs {
             }
         }
         Os::Windows => {
-            let roaming = absolute(env, "APPDATA").unwrap_or_else(|| home().join("AppData/Roaming"));
-            let local = absolute(env, "LOCALAPPDATA").unwrap_or_else(|| home().join("AppData/Local"));
+            let roaming = absolute(os, env, "APPDATA").unwrap_or_else(|| home().join("AppData/Roaming"));
+            let local = absolute(os, env, "LOCALAPPDATA").unwrap_or_else(|| home().join("AppData/Local"));
             Dirs {
                 config: roaming.join("Dubplate"),
                 data: local.join("Dubplate"),
@@ -90,7 +104,8 @@ pub fn cache_dir() -> PathBuf {
 /// The user's home folder, or "." if the environment doesn't say.
 pub fn home_dir() -> PathBuf {
     let env = |k: &str| std::env::var(k).ok();
-    absolute(&env, "HOME").or_else(|| absolute(&env, "USERPROFILE")).unwrap_or_else(|| PathBuf::from("."))
+    let os = Os::current();
+    absolute(os, &env, "HOME").or_else(|| absolute(os, &env, "USERPROFILE")).unwrap_or_else(|| PathBuf::from("."))
 }
 
 /// Shared library name for ONNX Runtime on this platform.
@@ -225,16 +240,24 @@ mod tests {
 
     #[test]
     fn windows_uses_appdata() {
-        let d = resolve(
-            Os::Windows,
-            &env(&[("APPDATA", "/c/Users/dj/AppData/Roaming"), ("LOCALAPPDATA", "/c/Users/dj/AppData/Local")]),
-        );
-        assert_eq!(d.config, Path::new("/c/Users/dj/AppData/Roaming/Dubplate"));
-        assert_eq!(d.data, Path::new("/c/Users/dj/AppData/Local/Dubplate"));
-        assert_eq!(d.cache, Path::new("/c/Users/dj/AppData/Local/Dubplate/cache"));
-        // Without them, fall back to the profile folder.
-        let d = resolve(Os::Windows, &env(&[("USERPROFILE", "/c/Users/dj")]));
-        assert_eq!(d.config, Path::new("/c/Users/dj/AppData/Roaming/Dubplate"));
+        // (expected paths are joined the same way, as `\` only separates folders on Windows itself)
+        let (roaming, local) = (r"C:\Users\dj\AppData\Roaming", r"C:\Users\dj\AppData\Local");
+        let d = resolve(Os::Windows, &env(&[("APPDATA", roaming), ("LOCALAPPDATA", local)]));
+        assert_eq!(d.config, Path::new(roaming).join("Dubplate"));
+        assert_eq!(d.data, Path::new(local).join("Dubplate"));
+        assert_eq!(d.cache, Path::new(local).join("Dubplate").join("cache"));
+        // Without them, fall back to the profile folder; a Unix-style HOME (Git Bash's /c/Users/dj) is not a Windows path.
+        let d = resolve(Os::Windows, &env(&[("HOME", "/c/Users/dj"), ("USERPROFILE", r"C:\Users\dj")]));
+        assert_eq!(d.config, Path::new(r"C:\Users\dj").join("AppData/Roaming").join("Dubplate"));
+    }
+
+    #[test]
+    fn absolute_means_what_it_does_on_each_platform() {
+        assert!(is_absolute_on(Os::Linux, "/home/dj") && !is_absolute_on(Os::Linux, r"C:\Users"));
+        assert!(!is_absolute_on(Os::Linux, "relative/cache") && !is_absolute_on(Os::MacOs, ""));
+        assert!(is_absolute_on(Os::Windows, r"C:\Users") && is_absolute_on(Os::Windows, "d:/x"));
+        assert!(is_absolute_on(Os::Windows, r"\\server\share") && is_absolute_on(Os::Windows, r"\\?\C:\x"));
+        assert!(!is_absolute_on(Os::Windows, "/c/Users/dj") && !is_absolute_on(Os::Windows, "C:relative"));
     }
 
     #[test]
