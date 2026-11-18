@@ -1,0 +1,342 @@
+[device]
+name = "DJControl Starlight"
+port_match = ["DJControl Starlight"]
+priority = 0
+source = "DJUCED .djm — DJControl Starlight"
+notes = "Hercules DJControl Starlight default MIDI Mapping"
+
+[[bind]]
+msg = "91 05"
+func = "sync"
+deck = 0
+label = "SYNC_A"
+
+[[bind]]
+msg = "91 06"
+func = "cue"
+deck = 0
+label = "CUE_A"
+
+[[bind]]
+msg = "91 07"
+func = "play_pause"
+deck = 0
+label = "PLAY_A"
+
+[[bind]]
+msg = "91 08"
+func = "jog_touch"
+deck = 0
+label = "JOG_TOUCH_A"
+
+[[bind]]
+msg = "92 05"
+func = "sync"
+deck = 1
+label = "SYNC_B"
+
+[[bind]]
+msg = "92 06"
+func = "cue"
+deck = 1
+label = "CUE_B"
+
+[[bind]]
+msg = "92 07"
+func = "play_pause"
+deck = 1
+label = "PLAY_B"
+
+[[bind]]
+msg = "92 08"
+func = "jog_touch"
+deck = 1
+label = "JOG_TOUCH_B"
+
+[[bind]]
+msg = "94 06"
+func = "to_start"
+deck = 0
+label = "CUE_SH_A"
+
+[[bind]]
+msg = "94 07"
+func = "load"
+deck = 0
+label = "LOAD_A"
+
+[[bind]]
+msg = "95 06"
+func = "to_start"
+deck = 1
+label = "CUE_SH_B"
+
+[[bind]]
+msg = "95 07"
+func = "load"
+deck = 1
+label = "LOAD_B"
+
+[[bind]]
+msg = "96 00"
+func = "pad"
+deck = 0
+arg = 0
+label = "HC1_A"
+
+[[bind]]
+msg = "96 01"
+func = "pad"
+deck = 0
+arg = 1
+label = "HC2_A"
+
+[[bind]]
+msg = "96 02"
+func = "pad"
+deck = 0
+arg = 2
+label = "HC3_A"
+
+[[bind]]
+msg = "96 03"
+func = "pad"
+deck = 0
+arg = 3
+label = "HC4_A"
+
+[[bind]]
+msg = "96 08"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "DELETE_HC1_A"
+
+[[bind]]
+msg = "96 09"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "DELETE_HC2_A"
+
+[[bind]]
+msg = "96 0A"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "DELETE_HC3_A"
+
+[[bind]]
+msg = "96 0B"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "DELETE_HC4_A"
+
+[[bind]]
+msg = "96 10"
+func = "loop_beats"
+deck = 0
+arg = 1
+label = "LOOP_1_BEAT_A"
+
+[[bind]]
+msg = "96 11"
+func = "loop_beats"
+deck = 0
+arg = 2
+label = "LOOP_2_BEAT_A"
+
+[[bind]]
+msg = "96 12"
+func = "loop_beats"
+deck = 0
+arg = 4
+label = "LOOP_4_BEAT_A"
+
+[[bind]]
+msg = "96 13"
+func = "loop_beats"
+deck = 0
+arg = 8
+label = "LOOP_8_BEAT_A"
+
+[[bind]]
+msg = "97 00"
+func = "pad"
+deck = 1
+arg = 0
+label = "HC1_B"
+
+[[bind]]
+msg = "97 01"
+func = "pad"
+deck = 1
+arg = 1
+label = "HC2_B"
+
+[[bind]]
+msg = "97 02"
+func = "pad"
+deck = 1
+arg = 2
+label = "HC3_B"
+
+[[bind]]
+msg = "97 03"
+func = "pad"
+deck = 1
+arg = 3
+label = "HC4_B"
+
+[[bind]]
+msg = "97 08"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "DELETE_HC1_B"
+
+[[bind]]
+msg = "97 09"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "DELETE_HC2_B"
+
+[[bind]]
+msg = "97 0A"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "DELETE_HC3_B"
+
+[[bind]]
+msg = "97 0B"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "DELETE_HC4_B"
+
+[[bind]]
+msg = "97 10"
+func = "loop_beats"
+deck = 1
+arg = 1
+label = "LOOP_1_BEAT_B"
+
+[[bind]]
+msg = "97 11"
+func = "loop_beats"
+deck = 1
+arg = 2
+label = "LOOP_2_BEAT_B"
+
+[[bind]]
+msg = "97 12"
+func = "loop_beats"
+deck = 1
+arg = 4
+label = "LOOP_4_BEAT_B"
+
+[[bind]]
+msg = "97 13"
+func = "loop_beats"
+deck = 1
+arg = 8
+label = "LOOP_8_BEAT_B"
+
+[[bind]]
+msg = "B0 00"
+func = "crossfader"
+hires = true
+label = "XFADER"
+
+[[bind]]
+msg = "B1 00"
+func = "volume"
+deck = 0
+hires = true
+label = "VOL_A"
+
+[[bind]]
+msg = "B1 01"
+func = "filter"
+deck = 0
+hires = true
+label = "FILTER_A"
+
+[[bind]]
+msg = "B1 02"
+func = "eq_low"
+deck = 0
+hires = true
+label = "LOW_A"
+
+[[bind]]
+msg = "B1 08"
+func = "tempo"
+deck = 0
+hires = true
+label = "PITCH_A"
+
+[[bind]]
+msg = "B1 09"
+func = "jog_bend"
+deck = 0
+label = "JOG_bend_A"
+
+[[bind]]
+msg = "B1 0A"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_A"
+
+[[bind]]
+msg = "B2 00"
+func = "volume"
+deck = 1
+hires = true
+label = "VOL_B"
+
+[[bind]]
+msg = "B2 01"
+func = "filter"
+deck = 1
+hires = true
+label = "FILTER_B"
+
+[[bind]]
+msg = "B2 02"
+func = "eq_low"
+deck = 1
+hires = true
+label = "LOW_B"
+
+[[bind]]
+msg = "B2 08"
+func = "tempo"
+deck = 1
+hires = true
+label = "PITCH_B"
+
+[[bind]]
+msg = "B2 09"
+func = "jog_bend"
+deck = 1
+label = "JOG_bend_B"
+
+[[bind]]
+msg = "B2 0A"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SCRATCH_B"
+
+[[bind]]
+msg = "B4 0A"
+func = "browse"
+label = "SHIFT_TOUCH_JOGA"
+
+[[bind]]
+msg = "B5 0A"
+func = "browse"
+label = "SHIFT_TOUCH_JOGB"

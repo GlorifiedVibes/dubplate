@@ -1,0 +1,204 @@
+[device]
+name = "DJ Control MP3 e2 MIDI"
+port_match = [
+    "DJ Control MP3 e2 MIDI",
+    "DJ Control MP3 e2",
+]
+priority = 0
+source = "DJUCED .djm — Default DJControl MP3 e2 mapping"
+notes = "The default midi mapping for the DJControl MP3 E2"
+
+[[bind]]
+msg = "90 01"
+func = "loop_in"
+deck = 0
+label = "Loop_IN_A"
+
+[[bind]]
+msg = "90 02"
+func = "loop_out"
+deck = 0
+label = "Loop_out_A"
+
+[[bind]]
+msg = "90 03"
+func = "loop_half"
+deck = 0
+label = "Loop_Half_A"
+
+[[bind]]
+msg = "90 04"
+func = "loop_double"
+deck = 0
+label = "Loop_Double_A"
+
+[[bind]]
+msg = "90 0A"
+func = "jog_bend"
+deck = 0
+label = "PitchBend_A_Dec"
+
+[[bind]]
+msg = "90 0B"
+func = "jog_bend"
+deck = 0
+label = "PitchBend_A_Inc"
+
+[[bind]]
+msg = "90 0E"
+func = "cue"
+deck = 0
+label = "Cue_Stop_A"
+
+[[bind]]
+msg = "90 0F"
+func = "play_pause"
+deck = 0
+label = "Play_A"
+
+[[bind]]
+msg = "90 11"
+func = "load"
+deck = 0
+label = "LoadDeck_A"
+
+[[bind]]
+msg = "90 12"
+func = "sync"
+deck = 0
+label = "Sync_A"
+
+[[bind]]
+msg = "90 15"
+func = "loop_in"
+deck = 1
+label = "Loop_IN_B"
+
+[[bind]]
+msg = "90 16"
+func = "loop_out"
+deck = 1
+label = "Loop_OUT_B"
+
+[[bind]]
+msg = "90 17"
+func = "loop_half"
+deck = 1
+label = "Loop_Half_B"
+
+[[bind]]
+msg = "90 18"
+func = "loop_double"
+deck = 1
+label = "Loop_DOuble_B"
+
+[[bind]]
+msg = "90 1E"
+func = "jog_bend"
+deck = 1
+label = "PitchBend_B_Dec"
+
+[[bind]]
+msg = "90 1F"
+func = "jog_bend"
+deck = 1
+label = "PitchBend_B_Inc"
+
+[[bind]]
+msg = "90 22"
+func = "cue"
+deck = 1
+label = "Cue_Stop_B"
+
+[[bind]]
+msg = "90 23"
+func = "play_pause"
+deck = 1
+label = "Play_B"
+
+[[bind]]
+msg = "90 25"
+func = "load"
+deck = 1
+label = "LoadDeck_B"
+
+[[bind]]
+msg = "90 26"
+func = "sync"
+deck = 1
+label = "Sync_B"
+
+[[bind]]
+msg = "90 29"
+func = "browse"
+label = "Browser_UP"
+
+[[bind]]
+msg = "90 2A"
+func = "browse"
+label = "Browser_Down"
+
+[[bind]]
+msg = "B0 32"
+func = "tempo"
+deck = 0
+label = "PitchRotary_A"
+
+[[bind]]
+msg = "B0 33"
+func = "tempo"
+deck = 1
+label = "PitchRotary_B"
+
+[[bind]]
+msg = "B0 34"
+func = "volume"
+deck = 0
+label = "Volume_A"
+
+[[bind]]
+msg = "B0 35"
+func = "eq_high"
+deck = 0
+label = "EQ_High_A"
+
+[[bind]]
+msg = "B0 36"
+func = "eq_mid"
+deck = 0
+label = "EQ_Mid_A"
+
+[[bind]]
+msg = "B0 37"
+func = "eq_low"
+deck = 0
+label = "EQ_Low_A"
+
+[[bind]]
+msg = "B0 38"
+func = "crossfader"
+label = "XFader"
+
+[[bind]]
+msg = "B0 39"
+func = "volume"
+deck = 1
+label = "Volume_B"
+
+[[bind]]
+msg = "B0 3A"
+func = "eq_high"
+deck = 1
+label = "EQ_High_B"
+
+[[bind]]
+msg = "B0 3B"
+func = "eq_mid"
+deck = 1
+label = "EQ_Mid_B"
+
+[[bind]]
+msg = "B0 3C"
+func = "eq_low"
+deck = 1
+label = "EQ_Low_B"

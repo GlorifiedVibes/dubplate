@@ -1,0 +1,41 @@
+[package]
+name = "dubplate"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+dubplate-engine = { path = "../engine", default-features = false }
+
+# egui with wgpu backend — GPU-accelerated, works on Wayland and X11
+eframe = { version = "0.29", features = ["wgpu"] }
+egui = "0.29"
+
+# Native file picker dialog (uses portal/kdialog/zenity on Linux)
+rfd = "0.15"
+
+# MIDI controller support
+midir = "0.10"
+
+log = "0.4"
+env_logger = "0.11"
+
+# Persistent library database (hot cues, track metadata)
+rusqlite = { version = "0.42", features = ["bundled"] }
+
+# MIDI controller profiles (TOML) and importing DJuced .djm maps (XML)
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+roxmltree = "0.20"
+
+[features]
+default = ["onnx-inference", "vst3-host"]
+# Hosts a VST3 effect on the main output.
+vst3-host = ["dubplate-engine/vst3-host"]
+# Stem separation through ONNX Runtime (see scripts/setup_onnx.sh).
+onnx-inference = ["dubplate-engine/onnx-inference"]
+# Stem separation through libtorch instead (build with LIBTORCH set; do not combine with onnx-inference).
+torch-inference = ["dubplate-engine/torch-inference"]
+
+[lints]
+workspace = true

@@ -1,0 +1,352 @@
+[device]
+name = "DJConsole Rmx2"
+port_match = ["DJConsole Rmx2"]
+priority = 0
+source = "DJUCED .djm — Default DJ Console RMX2 mapping"
+notes = "The default midi mapping for the DJ Console RMX2"
+
+[[bind]]
+msg = "90 09"
+func = "pad"
+deck = 0
+arg = 0
+label = "HotCue1_A"
+
+[[bind]]
+msg = "90 0A"
+func = "pad"
+deck = 0
+arg = 1
+label = "HotCue2_A"
+
+[[bind]]
+msg = "90 0B"
+func = "pad"
+deck = 0
+arg = 2
+label = "HotCue3_A"
+
+[[bind]]
+msg = "90 0C"
+func = "pad"
+deck = 0
+arg = 3
+label = "HotCue4_A"
+
+[[bind]]
+msg = "90 0D"
+func = "loop_toggle"
+deck = 0
+label = "Loop_Toggle_A"
+
+[[bind]]
+msg = "90 0E"
+func = "loop_beats"
+deck = 0
+arg = 2
+label = "Loop_2beat_A"
+
+[[bind]]
+msg = "90 0F"
+func = "loop_beats"
+deck = 0
+arg = 4
+label = "Loop_4beat_A"
+
+[[bind]]
+msg = "90 10"
+func = "loop_beats"
+deck = 0
+arg = 8
+label = "Loop_8beat_A"
+
+[[bind]]
+msg = "90 19"
+func = "pad"
+deck = 1
+arg = 0
+label = "HotCue1_B"
+
+[[bind]]
+msg = "90 1A"
+func = "pad"
+deck = 1
+arg = 1
+label = "HotCue2_B"
+
+[[bind]]
+msg = "90 1B"
+func = "pad"
+deck = 1
+arg = 2
+label = "HotCue3_B"
+
+[[bind]]
+msg = "90 1C"
+func = "pad"
+deck = 1
+arg = 3
+label = "HotCue4_B"
+
+[[bind]]
+msg = "90 1D"
+func = "loop_toggle"
+deck = 1
+label = "Loop_Toggle_B"
+
+[[bind]]
+msg = "90 1E"
+func = "loop_beats"
+deck = 1
+arg = 2
+label = "Loop_2Beat_B"
+
+[[bind]]
+msg = "90 1F"
+func = "loop_beats"
+deck = 1
+arg = 4
+label = "Loop_4Beat_B"
+
+[[bind]]
+msg = "90 20"
+func = "loop_beats"
+deck = 1
+arg = 8
+label = "Loop_8Beat_B"
+
+[[bind]]
+msg = "90 21"
+func = "play_pause"
+deck = 0
+label = "Play_A"
+
+[[bind]]
+msg = "90 22"
+func = "cue"
+deck = 0
+label = "CueStop_A"
+
+[[bind]]
+msg = "90 23"
+func = "sync"
+deck = 0
+label = "Sync_A"
+
+[[bind]]
+msg = "90 24"
+func = "load"
+deck = 0
+label = "Load_A"
+
+[[bind]]
+msg = "90 2C"
+func = "jog_bend"
+deck = 0
+label = "PitchBendA_Plus"
+
+[[bind]]
+msg = "90 2D"
+func = "jog_bend"
+deck = 0
+label = "PitchBendA_Minus"
+
+[[bind]]
+msg = "90 2F"
+func = "jog_touch"
+deck = 0
+label = "ScratchPush_A"
+
+[[bind]]
+msg = "90 33"
+func = "cue"
+deck = 1
+label = "CueStop_B"
+
+[[bind]]
+msg = "90 35"
+func = "load"
+deck = 1
+label = "Load_B"
+
+[[bind]]
+msg = "90 3D"
+func = "jog_bend"
+deck = 1
+label = "PitchBendB_Plus"
+
+[[bind]]
+msg = "90 3E"
+func = "jog_bend"
+deck = 1
+label = "PitchBendB_Minus"
+
+[[bind]]
+msg = "90 40"
+func = "jog_touch"
+deck = 1
+label = "ScratchPush_B"
+
+[[bind]]
+msg = "90 45"
+func = "browse"
+label = "Browse_Up"
+
+[[bind]]
+msg = "90 46"
+func = "browse"
+label = "Browse_Down"
+
+[[bind]]
+msg = "B0 09"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "DelHotCue1_A"
+
+[[bind]]
+msg = "B0 0A"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "DelHotCue2_A"
+
+[[bind]]
+msg = "B0 0B"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "DelHotCue3_A"
+
+[[bind]]
+msg = "B0 0C"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "DelHotCue4_A"
+
+[[bind]]
+msg = "B0 19"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "DelHotCue1_B"
+
+[[bind]]
+msg = "B0 1A"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "DelHotCue2_B"
+
+[[bind]]
+msg = "B0 1B"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "DelHotCue3_B"
+
+[[bind]]
+msg = "B0 1C"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "DelHotCue4_B"
+
+[[bind]]
+msg = "B0 30"
+func = "jog_bend"
+deck = 0
+label = "JogBend_A"
+
+[[bind]]
+msg = "B0 31"
+func = "jog_bend"
+deck = 1
+label = "JogBend_B"
+
+[[bind]]
+msg = "B0 32"
+func = "jog_scratch"
+deck = 0
+label = "JogScratch_A"
+
+[[bind]]
+msg = "B0 33"
+func = "jog_scratch"
+deck = 1
+label = "JogScratch_B"
+
+[[bind]]
+msg = "B0 36"
+func = "tempo"
+deck = 0
+hires = true
+label = "Pitch_A"
+
+[[bind]]
+msg = "B0 38"
+func = "tempo"
+deck = 1
+hires = true
+label = "Pitch_B"
+
+[[bind]]
+msg = "B0 3A"
+func = "volume"
+deck = 0
+hires = true
+label = "Vol_A"
+
+[[bind]]
+msg = "B0 3C"
+func = "eq_high"
+deck = 0
+hires = true
+label = "EQHi_A"
+
+[[bind]]
+msg = "B0 42"
+func = "gain"
+deck = 0
+hires = true
+label = "Gain_A"
+
+[[bind]]
+msg = "B0 48"
+func = "crossfader"
+hires = true
+label = "XFader"
+
+[[bind]]
+msg = "B0 4A"
+func = "volume"
+deck = 1
+hires = true
+label = "Vol_B"
+
+[[bind]]
+msg = "B0 4E"
+func = "eq_mid"
+deck = 1
+hires = true
+label = "EQMid_B"
+
+[[bind]]
+msg = "B0 52"
+func = "gain"
+deck = 1
+hires = true
+label = "Gain_B"
+
+[[bind]]
+msg = "B0 58"
+func = "filter"
+deck = 0
+label = "FilterCUE_A"
+
+[[bind]]
+msg = "B0 59"
+func = "filter"
+deck = 1
+label = "FilterCUE_B"

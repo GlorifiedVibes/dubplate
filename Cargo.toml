@@ -1,0 +1,42 @@
+[workspace]
+members = ["crates/core", "crates/engine", "crates/app"]
+default-members = ["crates/app"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.7.0"
+license = "MIT OR Apache-2.0"
+
+[workspace.lints.clippy]
+# Drawing and audio set-up functions take what they need; bundling the arguments into structs would only move them.
+too_many_arguments = "allow"
+# Signal-processing loops index several arrays by the same counter; an iterator over one of them reads worse.
+needless_range_loop = "allow"
+# `!(x > limit)` is deliberate where x may be NaN: it rejects NaN, and `x <= limit` would let it through.
+neg_cmp_op_on_partial_ord = "allow"
+type_complexity = "allow"
+# A channel effect is boxed wherever it is passed around.
+large_enum_variant = "allow"
+
+# Decoding/FFT/DSP are unusably slow unoptimised; keep dev builds fast enough to use.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev.package.dubplate-engine]
+opt-level = 3
+
+[profile.dev.package.dubplate-core]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+# Keep debug info in release for profiling
+[profile.release-with-debug]
+inherits = "release"
+debug = true

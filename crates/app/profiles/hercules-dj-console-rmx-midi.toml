@@ -1,0 +1,217 @@
+[device]
+name = "DJ Console Rmx Port 1"
+port_match = ["DJ Console Rmx Port 1"]
+priority = 0
+source = "DJUCED .djm — Default DJConsole RMX"
+notes = "The default midi mapping for the Hercules DJConsole RMX"
+
+[[bind]]
+msg = "B0 01"
+func = "loop_in"
+deck = 0
+label = "LoopIN_A"
+
+[[bind]]
+msg = "B0 03"
+func = "pad"
+deck = 0
+arg = 0
+label = "Hotcue1_A"
+
+[[bind]]
+msg = "B0 04"
+func = "loop_out"
+deck = 0
+label = "LoopOut_A"
+
+[[bind]]
+msg = "B0 06"
+func = "pad"
+deck = 0
+arg = 1
+label = "Hotcue2_A"
+
+[[bind]]
+msg = "B0 07"
+func = "sync"
+deck = 0
+label = "Sync_A"
+
+[[bind]]
+msg = "B0 0B"
+func = "play_pause"
+deck = 0
+label = "Play_A"
+
+[[bind]]
+msg = "B0 0C"
+func = "cue"
+deck = 0
+label = "Cue_StopA"
+
+[[bind]]
+msg = "B0 0D"
+func = "to_start"
+deck = 0
+label = "Stop_A"
+
+[[bind]]
+msg = "B0 12"
+func = "load"
+deck = 0
+label = "Loaddeck_A"
+
+[[bind]]
+msg = "B0 16"
+func = "load"
+deck = 1
+label = "Loaddeck_B"
+
+[[bind]]
+msg = "B0 19"
+func = "loop_in"
+deck = 1
+label = "LoopIn_B"
+
+[[bind]]
+msg = "B0 1B"
+func = "pad"
+deck = 1
+arg = 0
+label = "Hotcue1_B"
+
+[[bind]]
+msg = "B0 1C"
+func = "loop_out"
+deck = 1
+label = "LoopOut_B"
+
+[[bind]]
+msg = "B0 1E"
+func = "pad"
+deck = 1
+arg = 1
+label = "Hotcue2_B"
+
+[[bind]]
+msg = "B0 1F"
+func = "sync"
+deck = 1
+label = "Sync_B"
+
+[[bind]]
+msg = "B0 23"
+func = "play_pause"
+deck = 1
+label = "Play_B"
+
+[[bind]]
+msg = "B0 24"
+func = "cue"
+deck = 1
+label = "Cue_StopB"
+
+[[bind]]
+msg = "B0 25"
+func = "to_start"
+deck = 1
+label = "Stop_B"
+
+[[bind]]
+msg = "B0 2A"
+func = "browse"
+label = "Browser_UP"
+
+[[bind]]
+msg = "B0 2B"
+func = "browse"
+label = "Browser_Down"
+
+[[bind]]
+msg = "B0 2F"
+func = "jog_bend"
+deck = 0
+label = "JogBend"
+
+[[bind]]
+msg = "B0 30"
+func = "jog_bend"
+deck = 1
+label = "JogBend_B"
+
+[[bind]]
+msg = "B0 31"
+func = "tempo"
+deck = 0
+label = "Pitch_A"
+
+[[bind]]
+msg = "B0 32"
+func = "volume"
+deck = 0
+label = "Volume_A"
+
+[[bind]]
+msg = "B0 33"
+func = "gain"
+deck = 0
+label = "Gain A"
+
+[[bind]]
+msg = "B0 34"
+func = "eq_high"
+deck = 0
+label = "EQA_High"
+
+[[bind]]
+msg = "B0 35"
+func = "eq_mid"
+deck = 0
+label = "EQA_Mid"
+
+[[bind]]
+msg = "B0 36"
+func = "eq_low"
+deck = 0
+label = "EQA_Low"
+
+[[bind]]
+msg = "B0 39"
+func = "crossfader"
+label = "XFader"
+
+[[bind]]
+msg = "B0 3B"
+func = "tempo"
+deck = 1
+label = "Pitch_B"
+
+[[bind]]
+msg = "B0 3C"
+func = "volume"
+deck = 1
+label = "Volume_B"
+
+[[bind]]
+msg = "B0 3D"
+func = "gain"
+deck = 1
+label = "Gain B"
+
+[[bind]]
+msg = "B0 3E"
+func = "eq_high"
+deck = 1
+label = "EQB_High"
+
+[[bind]]
+msg = "B0 3F"
+func = "eq_mid"
+deck = 1
+label = "EQB_Mid"
+
+[[bind]]
+msg = "B0 40"
+func = "eq_low"
+deck = 1
+label = "EQB_Low"

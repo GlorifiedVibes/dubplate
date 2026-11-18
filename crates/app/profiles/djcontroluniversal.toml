@@ -1,0 +1,632 @@
+[device]
+name = "DJHERCULESMIX Universal DJ [djcontroluniversal]"
+port_match = ["DJHERCULESMIX Universal DJ"]
+priority = 0
+source = "DJUCED .djm — Default DJHERCULESMIX Universal DJ mapping"
+notes = "DJHERCULESMIX Universal DJ mapping"
+
+[[bind]]
+msg = "90 11"
+func = "pad"
+deck = 0
+arg = 0
+label = "HOTCUE1_A"
+
+[[bind]]
+msg = "90 12"
+func = "pad"
+deck = 0
+arg = 1
+label = "HOTCUE2_A"
+
+[[bind]]
+msg = "90 13"
+func = "pad"
+deck = 0
+arg = 2
+label = "HOTCUE3_A"
+
+[[bind]]
+msg = "90 14"
+func = "pad"
+deck = 0
+arg = 3
+label = "HOTCUE4_A"
+
+[[bind]]
+msg = "90 15"
+func = "pad"
+deck = 0
+arg = 4
+label = "HOTCUE5_A"
+
+[[bind]]
+msg = "90 16"
+func = "pad"
+deck = 0
+arg = 5
+label = "HOTCUE6_A"
+
+[[bind]]
+msg = "90 17"
+func = "pad"
+deck = 0
+arg = 6
+label = "HOTCUE7_A"
+
+[[bind]]
+msg = "90 18"
+func = "pad"
+deck = 0
+arg = 7
+label = "HOTCUE8_A"
+
+[[bind]]
+msg = "90 19"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "SHCUE1_A"
+
+[[bind]]
+msg = "90 1A"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "SHCUE2_A"
+
+[[bind]]
+msg = "90 1B"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "SHCUE3_A"
+
+[[bind]]
+msg = "90 1C"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "SHCUE4_A"
+
+[[bind]]
+msg = "90 1D"
+func = "pad_delete"
+deck = 0
+arg = 4
+label = "SHCUE5_A"
+
+[[bind]]
+msg = "90 1E"
+func = "pad_delete"
+deck = 0
+arg = 5
+label = "SHCUE6_A"
+
+[[bind]]
+msg = "90 1F"
+func = "pad_delete"
+deck = 0
+arg = 6
+label = "SHCUE7_A"
+
+[[bind]]
+msg = "90 20"
+func = "pad_delete"
+deck = 0
+arg = 7
+label = "SHCUE8_A"
+
+[[bind]]
+msg = "90 31"
+func = "loop_beats"
+deck = 0
+arg = 0
+label = "LOOP1_A"
+
+[[bind]]
+msg = "90 32"
+func = "loop_beats"
+deck = 0
+arg = 0
+label = "LOOP2_A"
+
+[[bind]]
+msg = "90 33"
+func = "loop_beats"
+deck = 0
+arg = 0
+label = "LOOP3_A"
+
+[[bind]]
+msg = "90 34"
+func = "loop_beats"
+deck = 0
+arg = 0
+label = "LOOP4_A"
+
+[[bind]]
+msg = "90 35"
+func = "loop_beats"
+deck = 0
+arg = 1
+label = "LOOP5_A"
+
+[[bind]]
+msg = "90 36"
+func = "loop_beats"
+deck = 0
+arg = 2
+label = "LOOP6_A"
+
+[[bind]]
+msg = "90 37"
+func = "loop_beats"
+deck = 0
+arg = 4
+label = "LOOP7_A"
+
+[[bind]]
+msg = "90 38"
+func = "loop_beats"
+deck = 0
+arg = 8
+label = "LOOP8_A"
+
+[[bind]]
+msg = "90 39"
+func = "loop_in"
+deck = 0
+label = "LOOP_PADSH1_A"
+
+[[bind]]
+msg = "90 3A"
+func = "loop_out"
+deck = 0
+label = "LOOP_PADSH2_A"
+
+[[bind]]
+msg = "90 3B"
+func = "loop_half"
+deck = 0
+label = "LOOP_PADSH3_A"
+
+[[bind]]
+msg = "90 3C"
+func = "loop_double"
+deck = 0
+label = "LOOP_PADSH4_A"
+
+[[bind]]
+msg = "90 3D"
+func = "loop_toggle"
+deck = 0
+label = "LOOP_PADSH5_A"
+
+[[bind]]
+msg = "90 41"
+func = "play_pause"
+deck = 0
+label = "PLAY_A"
+
+[[bind]]
+msg = "90 42"
+func = "cue"
+deck = 0
+label = "CUE_A"
+
+[[bind]]
+msg = "90 43"
+func = "sync"
+deck = 0
+label = "SYNC_A"
+
+[[bind]]
+msg = "90 4A"
+func = "to_start"
+deck = 0
+label = "SHCUE_A"
+
+[[bind]]
+msg = "90 51"
+func = "load"
+deck = 0
+label = "LOAD_A"
+
+[[bind]]
+msg = "90 52"
+func = "jog_touch"
+deck = 0
+label = "TOUCH_A"
+
+[[bind]]
+msg = "91 11"
+func = "pad"
+deck = 1
+arg = 0
+label = "HOTCUE1_B"
+
+[[bind]]
+msg = "91 12"
+func = "pad"
+deck = 1
+arg = 1
+label = "HOTCUE2_B"
+
+[[bind]]
+msg = "91 13"
+func = "pad"
+deck = 1
+arg = 2
+label = "HOTCUE3_B"
+
+[[bind]]
+msg = "91 14"
+func = "pad"
+deck = 1
+arg = 3
+label = "HOTCUE4_B"
+
+[[bind]]
+msg = "91 15"
+func = "pad"
+deck = 1
+arg = 4
+label = "HOTCUE5_B"
+
+[[bind]]
+msg = "91 16"
+func = "pad"
+deck = 1
+arg = 5
+label = "HOTCUE6_B"
+
+[[bind]]
+msg = "91 17"
+func = "pad"
+deck = 1
+arg = 6
+label = "HOTCUE7_B"
+
+[[bind]]
+msg = "91 18"
+func = "pad"
+deck = 1
+arg = 7
+label = "HOTCUE8_B"
+
+[[bind]]
+msg = "91 19"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "SHCUE1_B"
+
+[[bind]]
+msg = "91 1A"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "SHCUE2_B"
+
+[[bind]]
+msg = "91 1B"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "SHCUE3_B"
+
+[[bind]]
+msg = "91 1C"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "SHCUE4_B"
+
+[[bind]]
+msg = "91 1D"
+func = "pad_delete"
+deck = 1
+arg = 4
+label = "SHCUE5_B"
+
+[[bind]]
+msg = "91 1E"
+func = "pad_delete"
+deck = 1
+arg = 5
+label = "SHCUE6_B"
+
+[[bind]]
+msg = "91 1F"
+func = "pad_delete"
+deck = 1
+arg = 6
+label = "SHCUE7_B"
+
+[[bind]]
+msg = "91 20"
+func = "pad_delete"
+deck = 1
+arg = 7
+label = "SHCUE8_B"
+
+[[bind]]
+msg = "91 31"
+func = "loop_beats"
+deck = 1
+arg = 0
+label = "LOOP1_B"
+
+[[bind]]
+msg = "91 32"
+func = "loop_beats"
+deck = 1
+arg = 0
+label = "LOOP2_B"
+
+[[bind]]
+msg = "91 33"
+func = "loop_beats"
+deck = 1
+arg = 0
+label = "LOOP3_B"
+
+[[bind]]
+msg = "91 34"
+func = "loop_beats"
+deck = 1
+arg = 0
+label = "LOOP4_B"
+
+[[bind]]
+msg = "91 35"
+func = "loop_beats"
+deck = 1
+arg = 1
+label = "LOOP5_B"
+
+[[bind]]
+msg = "91 36"
+func = "loop_beats"
+deck = 1
+arg = 2
+label = "LOOP6_B"
+
+[[bind]]
+msg = "91 37"
+func = "loop_beats"
+deck = 1
+arg = 4
+label = "LOOP7_B"
+
+[[bind]]
+msg = "91 38"
+func = "loop_beats"
+deck = 1
+arg = 8
+label = "LOOP8_B"
+
+[[bind]]
+msg = "91 39"
+func = "loop_in"
+deck = 1
+label = "LOOP_PADSH1_B"
+
+[[bind]]
+msg = "91 3A"
+func = "loop_out"
+deck = 1
+label = "LOOP_PADSH2_B"
+
+[[bind]]
+msg = "91 3B"
+func = "loop_half"
+deck = 1
+label = "LOOP_PADSH3_B"
+
+[[bind]]
+msg = "91 3C"
+func = "loop_double"
+deck = 1
+label = "LOOP_PADSH4_B"
+
+[[bind]]
+msg = "91 3D"
+func = "loop_toggle"
+deck = 1
+label = "LOOP_PADSH5_B"
+
+[[bind]]
+msg = "91 41"
+func = "play_pause"
+deck = 1
+label = "PLAY_B"
+
+[[bind]]
+msg = "91 42"
+func = "cue"
+deck = 1
+label = "CUE_B"
+
+[[bind]]
+msg = "91 43"
+func = "sync"
+deck = 1
+label = "SYNC_B"
+
+[[bind]]
+msg = "91 4A"
+func = "to_start"
+deck = 1
+label = "SHCUE_B"
+
+[[bind]]
+msg = "91 51"
+func = "load"
+deck = 1
+label = "LOAD_B"
+
+[[bind]]
+msg = "91 52"
+func = "jog_touch"
+deck = 1
+label = "TOUCH_B"
+
+[[bind]]
+msg = "B0 01"
+func = "tempo"
+deck = 0
+hires = true
+label = "PITCH_A_REV"
+
+[[bind]]
+msg = "B0 02"
+func = "tempo"
+deck = 1
+hires = true
+label = "PITCH_B_REV"
+
+[[bind]]
+msg = "B0 30"
+func = "jog_bend"
+deck = 0
+label = "JOG_BEND_A"
+
+[[bind]]
+msg = "B0 31"
+func = "jog_bend"
+deck = 1
+label = "JOG_BEND_B"
+
+[[bind]]
+msg = "B0 32"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_A"
+
+[[bind]]
+msg = "B0 33"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SCRATCH_B"
+
+[[bind]]
+msg = "B0 36"
+func = "browse"
+label = "BROWSE_A"
+
+[[bind]]
+msg = "B0 37"
+func = "tempo"
+deck = 0
+hires = true
+label = "PITCH_A"
+
+[[bind]]
+msg = "B0 38"
+func = "tempo"
+deck = 1
+hires = true
+label = "PITCH_B"
+
+[[bind]]
+msg = "B0 39"
+func = "volume"
+deck = 0
+label = "LEVEL_A"
+
+[[bind]]
+msg = "B0 3B"
+func = "eq_high"
+deck = 0
+label = "HIGH_A"
+
+[[bind]]
+msg = "B0 3C"
+func = "eq_mid"
+deck = 0
+label = "MEDIUM_A"
+
+[[bind]]
+msg = "B0 3D"
+func = "eq_low"
+deck = 0
+label = "BASS_A"
+
+[[bind]]
+msg = "B0 3E"
+func = "eq_high"
+deck = 1
+label = "HIGH_B"
+
+[[bind]]
+msg = "B0 3F"
+func = "eq_mid"
+deck = 1
+label = "MEDIUM_B"
+
+[[bind]]
+msg = "B0 41"
+func = "crossfader"
+label = "XFADER"
+
+[[bind]]
+msg = "B0 51"
+func = "gain"
+deck = 0
+label = "SHFX_ENC_BA"
+
+[[bind]]
+msg = "B0 52"
+func = "gain"
+deck = 0
+label = "CUE_ENC_A"
+
+[[bind]]
+msg = "B0 53"
+func = "filter"
+deck = 0
+label = "SHCUE_ENC_A"
+
+[[bind]]
+msg = "B0 55"
+func = "gain"
+deck = 0
+label = "SHSAMP_ENC_A"
+
+[[bind]]
+msg = "B0 57"
+func = "gain"
+deck = 0
+label = "SHLOOP_ENC_A"
+
+[[bind]]
+msg = "B0 59"
+func = "gain"
+deck = 1
+label = "SHFX_ENC_B"
+
+[[bind]]
+msg = "B0 5A"
+func = "gain"
+deck = 1
+label = "CUE_ENC_B"
+
+[[bind]]
+msg = "B0 5B"
+func = "filter"
+deck = 1
+label = "SHCUE_ENC_B"
+
+[[bind]]
+msg = "B0 5D"
+func = "gain"
+deck = 1
+label = "SHSAMP_ENC_B"
+
+[[bind]]
+msg = "B0 5F"
+func = "gain"
+deck = 1
+label = "SHLOOP_ENC_B"

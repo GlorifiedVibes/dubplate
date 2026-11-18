@@ -1,0 +1,231 @@
+[device]
+name = "DJ Control Air"
+port_match = ["DJ Control Air"]
+priority = 0
+source = "DJUCED .djm — DJUCED 40 DJ Control Air mapping"
+notes = "DJUCED 40 Midi mapping xml for the DJ Control Air"
+
+[[bind]]
+msg = "90 09"
+func = "loop_in"
+deck = 0
+label = "LOOP_KP1_DA"
+
+[[bind]]
+msg = "90 0A"
+func = "loop_out"
+deck = 0
+label = "LOOP_KP2_DA"
+
+[[bind]]
+msg = "90 0B"
+func = "loop_half"
+deck = 0
+label = "LOOP_KP3_DA"
+
+[[bind]]
+msg = "90 0C"
+func = "loop_double"
+deck = 0
+label = "LOOP_KP4_DA"
+
+[[bind]]
+msg = "90 0D"
+func = "jog_bend"
+deck = 0
+label = "PBM_DA"
+
+[[bind]]
+msg = "90 0E"
+func = "jog_bend"
+deck = 0
+label = "PBP_DA"
+
+[[bind]]
+msg = "90 11"
+func = "cue"
+deck = 0
+label = "Cue_DA"
+
+[[bind]]
+msg = "90 12"
+func = "play_pause"
+deck = 0
+label = "Play_DA"
+
+[[bind]]
+msg = "90 13"
+func = "sync"
+deck = 0
+label = "Sync_DA"
+
+[[bind]]
+msg = "90 15"
+func = "load"
+deck = 0
+label = "Load_DA"
+
+[[bind]]
+msg = "90 16"
+func = "jog_touch"
+deck = 0
+label = "Touch_DA"
+
+[[bind]]
+msg = "90 1F"
+func = "loop_in"
+deck = 1
+label = "LOOP_KP1_DB"
+
+[[bind]]
+msg = "90 20"
+func = "loop_out"
+deck = 1
+label = "LOOP_KP2_DB"
+
+[[bind]]
+msg = "90 21"
+func = "loop_half"
+deck = 1
+label = "LOOP_KP3_DB"
+
+[[bind]]
+msg = "90 22"
+func = "loop_double"
+deck = 1
+label = "LOOP_KP4_DB"
+
+[[bind]]
+msg = "90 23"
+func = "jog_bend"
+deck = 1
+label = "PBM_DB"
+
+[[bind]]
+msg = "90 24"
+func = "jog_bend"
+deck = 1
+label = "PBP_DB"
+
+[[bind]]
+msg = "90 27"
+func = "cue"
+deck = 1
+label = "Cue_DB"
+
+[[bind]]
+msg = "90 28"
+func = "play_pause"
+deck = 1
+label = "Play_DB"
+
+[[bind]]
+msg = "90 29"
+func = "sync"
+deck = 1
+label = "Sync_DB"
+
+[[bind]]
+msg = "90 2B"
+func = "load"
+deck = 1
+label = "Load_DB"
+
+[[bind]]
+msg = "90 2C"
+func = "jog_touch"
+deck = 1
+label = "Touch_DB"
+
+[[bind]]
+msg = "90 33"
+func = "browse"
+label = "Up"
+
+[[bind]]
+msg = "90 34"
+func = "browse"
+label = "Down"
+
+[[bind]]
+msg = "B0 30"
+func = "jog_bend"
+deck = 0
+label = "JOG_DA"
+
+[[bind]]
+msg = "B0 31"
+func = "jog_bend"
+deck = 1
+label = "JOG_DB"
+
+[[bind]]
+msg = "B0 33"
+func = "jog_scratch"
+deck = 1
+label = "JOG_Scratch_DB"
+
+[[bind]]
+msg = "B0 34"
+func = "tempo"
+deck = 0
+label = "PITCH_DA"
+
+[[bind]]
+msg = "B0 35"
+func = "tempo"
+deck = 1
+label = "PITCH_DB"
+
+[[bind]]
+msg = "B0 36"
+func = "volume"
+deck = 0
+label = "VOL_DA"
+
+[[bind]]
+msg = "B0 37"
+func = "eq_high"
+deck = 0
+label = "TREBLE_DA"
+
+[[bind]]
+msg = "B0 38"
+func = "eq_mid"
+deck = 0
+label = "MEDIUM_DA"
+
+[[bind]]
+msg = "B0 39"
+func = "eq_low"
+deck = 0
+label = "BASS_DA"
+
+[[bind]]
+msg = "B0 3A"
+func = "crossfader"
+label = "XFADER"
+
+[[bind]]
+msg = "B0 3B"
+func = "volume"
+deck = 1
+label = "VOL_DB"
+
+[[bind]]
+msg = "B0 3C"
+func = "eq_high"
+deck = 1
+label = "TREBLE_DB"
+
+[[bind]]
+msg = "B0 3D"
+func = "eq_mid"
+deck = 1
+label = "MEDIUM_DB"
+
+[[bind]]
+msg = "B0 3E"
+func = "eq_low"
+deck = 1
+label = "BASS_DB"

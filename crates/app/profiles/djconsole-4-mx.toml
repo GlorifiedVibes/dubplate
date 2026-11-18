@@ -1,0 +1,298 @@
+[device]
+name = "DJ Console 4-Mx MIDI"
+port_match = [
+    "DJ Console 4-Mx MIDI",
+    "DJ Console 4-Mx",
+]
+priority = 0
+source = "DJUCED .djm — Default DJ Console 4-Mx"
+notes = "The default midi mapping for the Hercules DJConsole 4-Mx"
+
+[[bind]]
+msg = "90 01"
+func = "pad"
+deck = 0
+arg = 0
+label = "HotCUE1_A"
+
+[[bind]]
+msg = "90 02"
+func = "pad"
+deck = 0
+arg = 1
+label = "HotCUE2_A"
+
+[[bind]]
+msg = "90 03"
+func = "pad"
+deck = 0
+arg = 2
+label = "HotCUE3_A"
+
+[[bind]]
+msg = "90 04"
+func = "pad"
+deck = 0
+arg = 3
+label = "HotCUE4_A"
+
+[[bind]]
+msg = "90 05"
+func = "loop_in"
+deck = 0
+label = "Loop_in_A"
+
+[[bind]]
+msg = "90 06"
+func = "loop_out"
+deck = 0
+label = "Loop_Out_A"
+
+[[bind]]
+msg = "90 0D"
+func = "cue"
+deck = 0
+label = "Cue_Stop_A"
+
+[[bind]]
+msg = "90 0E"
+func = "play_pause"
+deck = 0
+label = "Play_A"
+
+[[bind]]
+msg = "90 10"
+func = "to_start"
+deck = 0
+label = "Stop_A"
+
+[[bind]]
+msg = "90 11"
+func = "sync"
+deck = 0
+label = "Sync_A"
+
+[[bind]]
+msg = "90 1A"
+func = "jog_touch"
+deck = 0
+label = "Touch_A"
+
+[[bind]]
+msg = "90 1D"
+func = "jog_bend"
+deck = 0
+label = "PitchBend_A_Dec"
+
+[[bind]]
+msg = "90 1E"
+func = "jog_bend"
+deck = 0
+label = "PitchBend_A_INC"
+
+[[bind]]
+msg = "90 21"
+func = "pad"
+deck = 1
+arg = 0
+label = "HotCUE1_B"
+
+[[bind]]
+msg = "90 22"
+func = "pad"
+deck = 1
+arg = 1
+label = "HotCUE2_B"
+
+[[bind]]
+msg = "90 23"
+func = "pad"
+deck = 1
+arg = 2
+label = "HotCUE3_B"
+
+[[bind]]
+msg = "90 24"
+func = "pad"
+deck = 1
+arg = 3
+label = "HotCUE4_B"
+
+[[bind]]
+msg = "90 25"
+func = "loop_in"
+deck = 1
+label = "Loop_in_B"
+
+[[bind]]
+msg = "90 26"
+func = "loop_out"
+deck = 1
+label = "Loop_Out_B"
+
+[[bind]]
+msg = "90 2D"
+func = "cue"
+deck = 1
+label = "Cue_Stop_B"
+
+[[bind]]
+msg = "90 2E"
+func = "play_pause"
+deck = 1
+label = "Play_B"
+
+[[bind]]
+msg = "90 30"
+func = "to_start"
+deck = 1
+label = "Stop_B"
+
+[[bind]]
+msg = "90 31"
+func = "sync"
+deck = 1
+label = "Sync_B"
+
+[[bind]]
+msg = "90 3A"
+func = "jog_touch"
+deck = 1
+label = "Touch_B"
+
+[[bind]]
+msg = "90 40"
+func = "browse"
+label = "Browser_UP"
+
+[[bind]]
+msg = "90 41"
+func = "browse"
+label = "Browser_Down"
+
+[[bind]]
+msg = "90 43"
+func = "jog_bend"
+deck = 1
+label = "Pitchbend_B_dec"
+
+[[bind]]
+msg = "90 44"
+func = "jog_bend"
+deck = 1
+label = "PitchBend_B_INC"
+
+[[bind]]
+msg = "90 4A"
+func = "load"
+deck = 0
+label = "LoadDeck_A"
+
+[[bind]]
+msg = "90 4B"
+func = "load"
+deck = 1
+label = "LoadDeck_B"
+
+[[bind]]
+msg = "B0 01"
+func = "jog_bend"
+deck = 0
+label = "Jog_PB_A"
+
+[[bind]]
+msg = "B0 03"
+func = "volume"
+deck = 0
+label = "Volume_A"
+
+[[bind]]
+msg = "B0 04"
+func = "gain"
+deck = 0
+label = "Gain_A"
+
+[[bind]]
+msg = "B0 05"
+func = "tempo"
+deck = 0
+hires = true
+label = "Pitch_Fader_A"
+
+[[bind]]
+msg = "B0 06"
+func = "eq_high"
+deck = 0
+label = "High_EQ_A"
+
+[[bind]]
+msg = "B0 07"
+func = "eq_mid"
+deck = 0
+label = "Mid_EQ_A"
+
+[[bind]]
+msg = "B0 08"
+func = "eq_low"
+deck = 0
+label = "Low_EQ_A"
+
+[[bind]]
+msg = "B0 09"
+func = "jog_bend"
+deck = 1
+label = "Jog_PB_B"
+
+[[bind]]
+msg = "B0 0B"
+func = "volume"
+deck = 1
+label = "Volume_B"
+
+[[bind]]
+msg = "B0 0C"
+func = "gain"
+deck = 1
+label = "Gain_B"
+
+[[bind]]
+msg = "B0 0D"
+func = "tempo"
+deck = 1
+hires = true
+label = "Pitch_Fader_B"
+
+[[bind]]
+msg = "B0 0E"
+func = "eq_high"
+deck = 1
+label = "High_EQ_B"
+
+[[bind]]
+msg = "B0 0F"
+func = "eq_mid"
+deck = 1
+label = "Mid_EQ_B"
+
+[[bind]]
+msg = "B0 10"
+func = "eq_low"
+deck = 1
+label = "Low_EQ_B"
+
+[[bind]]
+msg = "B0 22"
+func = "crossfader"
+label = "XFader"
+
+[[bind]]
+msg = "B0 24"
+func = "jog_scratch"
+deck = 0
+label = "JogScratch_A"
+
+[[bind]]
+msg = "B0 25"
+func = "jog_scratch"
+deck = 1
+label = "JogScratch_B"

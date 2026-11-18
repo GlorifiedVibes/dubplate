@@ -1,0 +1,65 @@
+[package]
+name = "dubplate-core"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+cpal = "0.15"
+# thread priorities (see threads.rs)
+libc = "0.2"
+
+# Decodes MP3, FLAC, WAV, AIFF, OGG, M4A/AAC — no FFmpeg needed
+symphonia = { version = "0.5", features = [
+    "mp3", "flac", "wav", "aiff", "vorbis", "ogg", "isomp4", "aac",
+] }
+
+# Lock-free SPSC ring buffer for audio ↔ UI commands (no alloc in callback)
+ringbuf = "0.6"
+
+log = "0.4"
+thiserror = "2"
+rustfft = "6"
+
+# Time stretching for key lock (MIT; builds its C++ at compile time, which also works cross-compiling to Windows).
+signalsmith-stretch = "0.1"
+
+# Serialisation for track analysis cache
+serde = { version = "1", features = ["derive"] }
+postcard = { version = "1", features = ["alloc"] }
+
+# File hashing for cache keys
+sha2 = "0.10"
+
+# WAV writing for session recording
+hound = "3"
+
+# TorchScript inference for embedded HTDemucs (opt-in: `--features torch-inference`).
+# Requires libtorch: set LIBTORCH=/path/to/torch before building.
+tch = { version = "0.18", optional = true }
+
+# ONNX Runtime, loaded from a shared library at run time (no link-time dependency, so the app starts
+# even when it isn't installed). GPU providers are opened through it.
+ort = { version = "=2.0.0-rc.15", default-features = false, features = ["std", "load-dynamic", "cuda", "directml", "coreml"], optional = true }
+
+# Raw dlopen, to preload the CUDA libraries that ONNX Runtime's GPU provider needs.
+libloading = { version = "0.8", optional = true }
+
+# VST3 plugin hosting (opt-in: `--features vst3-host`).
+vst3 = { version = "0.3", optional = true }
+
+# Lists the graphics adapters (DXGI) so the one with the most memory can be chosen for DirectML.
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.58", features = ["Win32_Graphics_Dxgi"] }
+
+[features]
+# ONNX Runtime is the stem engine (small, no CUDA toolkit to build against); libtorch is opt-in because
+# the two cannot share a process (libtorch's cuDNN shadows the one ONNX Runtime wants).
+default = ["onnx-inference"]
+onnx-inference = ["dep:ort", "dep:libloading"]
+torch-inference = ["dep:tch"]
+# Hosts VST3 effect plugins (experimental): scanning, loading, processing blocks of audio, parameters.
+vst3-host = ["dep:vst3", "dep:libloading"]
+
+[lints]
+workspace = true

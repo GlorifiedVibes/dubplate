@@ -1,0 +1,59 @@
+# Rust build output
+/target/
+
+# Inspiration — binaries and reference files, not source
+/samples/
+/inspiration/
+*.exe
+*.pkg
+*.bat
+
+# Leftover rekordbox analysis artefacts
+/config.json
+
+# Audio files — never commit sample or test audio
+*.mp3
+*.wav
+*.flac
+*.aiff
+*.ogg
+
+# Debug logs generated during development
+*.log
+cargo.out
+
+# Local environment and cargo config (machine-specific paths)
+.env
+.cargo/config.toml
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Models and runtimes live outside the repo (see scripts/setup_onnx.sh); never commit them
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Packaged apps
+/dist/
+
+# Reports about other programs' controller maps (made by `dubplate --midi-docs`): kept locally, never committed
+/docs/midi/*-functions.md
+!/docs/midi/dubplate-functions.md
+/docs/midi/cross-checks.md
+/docs/midi/serato.md
+
+# (samples/ above also holds your own ear-checked drop labels: see scripts/bar_labels.example.txt)
+
+# Python bytecode (holds the absolute path of its source)
+__pycache__/
+*.pyc

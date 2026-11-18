@@ -1,0 +1,30 @@
+[package]
+name = "dubplate-engine"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+dubplate-core = { path = "../core", default-features = false }
+log = "0.4"
+rustfft = "6"
+postcard = { version = "1", features = ["alloc"] }
+
+[features]
+# These pass straight through to dubplate-core, which owns the stem engines and the plugin host.
+default = ["onnx-inference"]
+onnx-inference = ["dubplate-core/onnx-inference"]
+torch-inference = ["dubplate-core/torch-inference"]
+vst3-host = ["dubplate-core/vst3-host"]
+
+[dev-dependencies]
+# Independent reader of Pioneer export files, used to check what we write (MPL-2.0, tests only).
+rekordcrate = { version = "0.3", default-features = false }
+binrw = "0.14"
+
+[[example]]
+name = "vst3check"
+required-features = ["vst3-host"]
+
+[lints]
+workspace = true

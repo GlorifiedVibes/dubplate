@@ -1,0 +1,197 @@
+[device]
+name = "DJControlWave"
+port_match = ["DJControlWave"]
+priority = 0
+source = "DJUCED .djm — DJW"
+notes = "DJControlWave with Master"
+
+[[bind]]
+msg = "90 07"
+func = "pad"
+deck = 0
+arg = 0
+label = "CUE1_A"
+
+[[bind]]
+msg = "90 08"
+func = "pad"
+deck = 0
+arg = 1
+label = "CUE2_A"
+
+[[bind]]
+msg = "90 09"
+func = "pad"
+deck = 0
+arg = 2
+label = "CUE3_A"
+
+[[bind]]
+msg = "90 0D"
+func = "play_pause"
+deck = 0
+label = "PLAY_A"
+
+[[bind]]
+msg = "90 0E"
+func = "sync"
+deck = 0
+label = "SYNC_A"
+
+[[bind]]
+msg = "90 0F"
+func = "cue"
+deck = 0
+label = "CUE_A"
+
+[[bind]]
+msg = "90 11"
+func = "loop_toggle"
+deck = 0
+label = "LOOP_A"
+
+[[bind]]
+msg = "90 12"
+func = "jog_touch"
+deck = 0
+label = "TOUCH_DA"
+
+[[bind]]
+msg = "90 19"
+func = "pad"
+deck = 1
+arg = 0
+label = "CUE1_B"
+
+[[bind]]
+msg = "90 1A"
+func = "pad"
+deck = 1
+arg = 1
+label = "CUE2_B"
+
+[[bind]]
+msg = "90 1B"
+func = "pad"
+deck = 1
+arg = 2
+label = "CUE3_B"
+
+[[bind]]
+msg = "90 1F"
+func = "play_pause"
+deck = 1
+label = "PLAY_B"
+
+[[bind]]
+msg = "90 20"
+func = "sync"
+deck = 1
+label = "SYNC_B"
+
+[[bind]]
+msg = "90 21"
+func = "cue"
+deck = 1
+label = "CUE_B"
+
+[[bind]]
+msg = "90 23"
+func = "loop_toggle"
+deck = 1
+label = "LOOP_B"
+
+[[bind]]
+msg = "90 24"
+func = "jog_touch"
+deck = 1
+label = "TOUCH_DB"
+
+[[bind]]
+msg = "B0 01"
+func = "crossfader"
+label = "XFADER"
+
+[[bind]]
+msg = "B0 02"
+func = "tempo"
+deck = 0
+label = "PITCH_A"
+
+[[bind]]
+msg = "B0 03"
+func = "tempo"
+deck = 1
+label = "PITCH_B"
+
+[[bind]]
+msg = "B0 04"
+func = "volume"
+deck = 0
+label = "VOL_A"
+
+[[bind]]
+msg = "B0 05"
+func = "volume"
+deck = 1
+label = "VOL_B"
+
+[[bind]]
+msg = "B0 07"
+func = "eq_high"
+deck = 0
+label = "EQ_HI_A"
+
+[[bind]]
+msg = "B0 08"
+func = "eq_mid"
+deck = 0
+label = "EQ_MID_A"
+
+[[bind]]
+msg = "B0 09"
+func = "eq_low"
+deck = 0
+label = "EQ_LOW_A"
+
+[[bind]]
+msg = "B0 0A"
+func = "eq_high"
+deck = 1
+label = "EQ_HI_B"
+
+[[bind]]
+msg = "B0 0B"
+func = "eq_mid"
+deck = 1
+label = "EQ_MID_B"
+
+[[bind]]
+msg = "B0 0C"
+func = "eq_low"
+deck = 1
+label = "EQ_LOW_B"
+
+[[bind]]
+msg = "B0 10"
+func = "jog_bend"
+deck = 0
+label = "JOG_BEND_A"
+
+[[bind]]
+msg = "B0 11"
+func = "jog_bend"
+deck = 1
+label = "JOG_BEND_B"
+
+[[bind]]
+msg = "B0 12"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_A"
+
+[[bind]]
+msg = "B0 13"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SCRATCH_B"

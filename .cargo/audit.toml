@@ -1,0 +1,14 @@
+# `cargo audit` reads this. Every ignore says why it is safe to ignore *for now* and what would remove it, so the list
+# is a to-do list as much as a silencer. Anything not listed here fails CI. Unmaintained / unsound *warnings* never fail.
+
+[advisories]
+ignore = [
+    # --- tch (libtorch), only with the opt-in `torch-inference` feature, never in a shipped build -------------------
+    # tch -> torch-sys pulls zip 0.6 (and zstd-safe 5) to unpack libtorch at build time. Not in default builds.
+    "RUSTSEC-2026-0367", "RUSTSEC-2026-0368", "RUSTSEC-2026-0369", "RUSTSEC-2026-0429",
+    "RUSTSEC-2026-0403",
+    # --- egui / eframe 0.29 (Linux accessibility bridge: accesskit_unix -> zbus_xml -> quick-xml) -------------------
+    # Quadratic parse time and unbounded allocation on hostile XML. It parses D-Bus introspection XML from the
+    # desktop's own session bus, not files. Fix: upgrade egui/eframe past 0.29.
+    "RUSTSEC-2026-0194", "RUSTSEC-2026-0195",
+]

@@ -1,0 +1,284 @@
+[device]
+name = "Hercules DJControl Instinct"
+port_match = [
+    "Hercules DJControl Instinct",
+    "DJControl Instinct",
+]
+priority = 0
+source = "DJUCED .djm — Default DJ Control Instinct mapping"
+notes = "The default midi mapping xml for the DJ Control Instinct"
+
+[[bind]]
+msg = "90 09"
+func = "loop_in"
+deck = 0
+label = "Loop_IN"
+
+[[bind]]
+msg = "90 0A"
+func = "loop_out"
+deck = 0
+label = "Loop_OutA"
+
+[[bind]]
+msg = "90 0B"
+func = "loop_half"
+deck = 0
+label = "Loop_Half"
+
+[[bind]]
+msg = "90 0C"
+func = "loop_double"
+deck = 0
+label = "Loop_Double"
+
+[[bind]]
+msg = "90 0D"
+func = "pad"
+deck = 0
+arg = 0
+label = "HotCue1_A"
+
+[[bind]]
+msg = "90 0E"
+func = "pad"
+deck = 0
+arg = 1
+label = "HotCue2_A"
+
+[[bind]]
+msg = "90 0F"
+func = "pad"
+deck = 0
+arg = 2
+label = "HotCue3_A"
+
+[[bind]]
+msg = "90 10"
+func = "pad"
+deck = 0
+arg = 3
+label = "HotCue4_A"
+
+[[bind]]
+msg = "90 11"
+func = "jog_bend"
+deck = 0
+label = "PitchBendA_Dec"
+
+[[bind]]
+msg = "90 12"
+func = "jog_bend"
+deck = 0
+label = "PitchBendA_Inc"
+
+[[bind]]
+msg = "90 15"
+func = "cue"
+deck = 0
+label = "CUE_StopA"
+
+[[bind]]
+msg = "90 16"
+func = "play_pause"
+deck = 0
+label = "Play_A"
+
+[[bind]]
+msg = "90 17"
+func = "sync"
+deck = 0
+label = "Sync_A"
+
+[[bind]]
+msg = "90 19"
+func = "load"
+deck = 0
+label = "LoadA"
+
+[[bind]]
+msg = "90 1A"
+func = "jog_touch"
+deck = 0
+label = "Scratch_PushA"
+
+[[bind]]
+msg = "90 23"
+func = "loop_in"
+deck = 1
+label = "Loon_INB"
+
+[[bind]]
+msg = "90 24"
+func = "loop_out"
+deck = 1
+label = "Loop_OutB"
+
+[[bind]]
+msg = "90 25"
+func = "loop_half"
+deck = 1
+label = "Loop_HalfB"
+
+[[bind]]
+msg = "90 26"
+func = "loop_double"
+deck = 1
+label = "Loop_Double_B"
+
+[[bind]]
+msg = "90 27"
+func = "pad"
+deck = 1
+arg = 0
+label = "Hot_Cue1"
+
+[[bind]]
+msg = "90 28"
+func = "pad"
+deck = 1
+arg = 1
+label = "Hot_Cue2_B"
+
+[[bind]]
+msg = "90 29"
+func = "pad"
+deck = 1
+arg = 2
+label = "Hot_Cue3_B"
+
+[[bind]]
+msg = "90 2A"
+func = "pad"
+deck = 1
+arg = 3
+label = "HotCue4_B"
+
+[[bind]]
+msg = "90 2B"
+func = "jog_bend"
+deck = 1
+label = "PitchBendB_Dec"
+
+[[bind]]
+msg = "90 2C"
+func = "jog_bend"
+deck = 1
+label = "PitchBendB_Inc"
+
+[[bind]]
+msg = "90 2F"
+func = "cue"
+deck = 1
+label = "CUE_StopB"
+
+[[bind]]
+msg = "90 30"
+func = "play_pause"
+deck = 1
+label = "Play_B"
+
+[[bind]]
+msg = "90 31"
+func = "sync"
+deck = 1
+label = "Sync_B"
+
+[[bind]]
+msg = "90 33"
+func = "load"
+deck = 1
+label = "LoadB"
+
+[[bind]]
+msg = "90 34"
+func = "jog_touch"
+deck = 1
+label = "Scratch_PushB"
+
+[[bind]]
+msg = "90 36"
+func = "browse"
+label = "Browser_up"
+
+[[bind]]
+msg = "90 37"
+func = "browse"
+label = "Browser_down"
+
+[[bind]]
+msg = "B0 32"
+func = "jog_scratch"
+deck = 0
+label = "Scratch_A"
+
+[[bind]]
+msg = "B0 33"
+func = "jog_scratch"
+deck = 1
+label = "Scratch_B"
+
+[[bind]]
+msg = "B0 34"
+func = "tempo"
+deck = 0
+label = "PitchStick_A"
+
+[[bind]]
+msg = "B0 35"
+func = "tempo"
+deck = 1
+label = "PitchStick_B"
+
+[[bind]]
+msg = "B0 36"
+func = "volume"
+deck = 0
+label = "Volume_A"
+
+[[bind]]
+msg = "B0 37"
+func = "eq_high"
+deck = 0
+label = "EQA_Hi"
+
+[[bind]]
+msg = "B0 38"
+func = "eq_mid"
+deck = 0
+label = "EQA_Mid"
+
+[[bind]]
+msg = "B0 39"
+func = "eq_low"
+deck = 0
+label = "EQA_Low"
+
+[[bind]]
+msg = "B0 3A"
+func = "crossfader"
+label = "XFader"
+
+[[bind]]
+msg = "B0 3B"
+func = "volume"
+deck = 1
+label = "Volume_B"
+
+[[bind]]
+msg = "B0 3C"
+func = "eq_high"
+deck = 1
+label = "EQB_Hi"
+
+[[bind]]
+msg = "B0 3D"
+func = "eq_mid"
+deck = 1
+label = "EQB_Mid"
+
+[[bind]]
+msg = "B0 3E"
+func = "eq_low"
+deck = 1
+label = "EQB_Low"

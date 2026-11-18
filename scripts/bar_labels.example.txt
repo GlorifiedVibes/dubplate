@@ -1,0 +1,13 @@
+# Drops a person heard, as seconds into each file, for scoring bar 1 and the section finder (the `barscore` example).
+#
+#   cp scripts/bar_labels.example.txt samples/bar_labels.txt     # samples/ is git-ignored: your music and paths stay local
+#   (edit it: your files, your times)
+#   cargo run --release -p dubplate-engine --example barscore -- samples/bar_labels.txt
+#
+# One line per track, tab-separated: the file, then the time in seconds of the first beat of each drop (the beat the
+# bass lands on). Listen to the track, note where each drop hits, and add a line: this is the only ground truth for
+# bar lines there is, so a few tracks from different genres are worth more than many from one.
+# A path is relative to where you run the command (the repository root), or absolute.
+#
+# samples/Some Track.mp3	29.49	149.43
+# samples/Another Track.ogg	26.54

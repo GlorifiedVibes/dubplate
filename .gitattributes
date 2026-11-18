@@ -1,0 +1,3 @@
+# Left out of the public GitHub copy (scripts/publish_github.sh publishes what `git archive` gives)
+.git-blame-ignore-revs export-ignore
+.woodpecker/ export-ignore

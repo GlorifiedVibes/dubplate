@@ -1,0 +1,392 @@
+[device]
+name = "DJControl Instinct P8 [djcontrol-instinctp8-gain]"
+port_match = ["DJControl Instinct P8"]
+priority = 0
+source = "DJUCED .djm — GAIN DJControl Instinct P8 mapping"
+notes = "GAIN replaces EQ HIGH"
+
+[[bind]]
+msg = "90 01"
+func = "pad"
+deck = 0
+arg = 0
+label = "CUE_KP1_DA"
+
+[[bind]]
+msg = "90 02"
+func = "pad"
+deck = 0
+arg = 1
+label = "CUE_KP2_DA"
+
+[[bind]]
+msg = "90 03"
+func = "pad"
+deck = 0
+arg = 2
+label = "CUE_KP3_DA"
+
+[[bind]]
+msg = "90 04"
+func = "pad"
+deck = 0
+arg = 3
+label = "CUE_KP4_DA"
+
+[[bind]]
+msg = "90 05"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "SH_CUE_KP1_DA"
+
+[[bind]]
+msg = "90 06"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "SH_CUE_KP2_DA"
+
+[[bind]]
+msg = "90 07"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "SH_CUE_KP3_DA"
+
+[[bind]]
+msg = "90 08"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "SH_CUE_KP4_DA"
+
+[[bind]]
+msg = "90 1D"
+func = "loop_in"
+deck = 0
+label = "SH_LOOP_KP1_DA"
+
+[[bind]]
+msg = "90 1E"
+func = "loop_out"
+deck = 0
+label = "SH_LOOP_KP2_DA"
+
+[[bind]]
+msg = "90 1F"
+func = "loop_half"
+deck = 0
+label = "SH_LOOP_KP3_DA"
+
+[[bind]]
+msg = "90 20"
+func = "loop_double"
+deck = 0
+label = "SH_LOOP_KP4_DA"
+
+[[bind]]
+msg = "90 21"
+func = "play_pause"
+deck = 0
+label = "PLAY_DA"
+
+[[bind]]
+msg = "90 22"
+func = "cue"
+deck = 0
+label = "CUE_DA"
+
+[[bind]]
+msg = "90 23"
+func = "sync"
+deck = 0
+label = "SYNC_DA"
+
+[[bind]]
+msg = "90 25"
+func = "to_start"
+deck = 0
+label = "SH_CUE_DA"
+
+[[bind]]
+msg = "90 31"
+func = "pad"
+deck = 1
+arg = 0
+label = "CUE_KP1_DB"
+
+[[bind]]
+msg = "90 32"
+func = "pad"
+deck = 1
+arg = 1
+label = "CUE_KP2_DB"
+
+[[bind]]
+msg = "90 33"
+func = "pad"
+deck = 1
+arg = 2
+label = "CUE_KP3_DB"
+
+[[bind]]
+msg = "90 34"
+func = "pad"
+deck = 1
+arg = 3
+label = "CUE_KP4_DB"
+
+[[bind]]
+msg = "90 35"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "SH_CUE_KP1_DB"
+
+[[bind]]
+msg = "90 36"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "SH_CUE_KP2_DB"
+
+[[bind]]
+msg = "90 37"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "SH_CUE_KP3_DB"
+
+[[bind]]
+msg = "90 38"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "SH_CUE_KP4_DB"
+
+[[bind]]
+msg = "90 4D"
+func = "loop_in"
+deck = 1
+label = "SH_LOOP_KP1_DB"
+
+[[bind]]
+msg = "90 4E"
+func = "loop_out"
+deck = 1
+label = "SH_LOOP_KP2_DB"
+
+[[bind]]
+msg = "90 4F"
+func = "loop_half"
+deck = 1
+label = "SH_LOOP_KP3_DB"
+
+[[bind]]
+msg = "90 50"
+func = "loop_double"
+deck = 1
+label = "SH_LOOP_KP4_DB"
+
+[[bind]]
+msg = "90 51"
+func = "play_pause"
+deck = 1
+label = "PLAY_DB"
+
+[[bind]]
+msg = "90 52"
+func = "cue"
+deck = 1
+label = "CUE_DB"
+
+[[bind]]
+msg = "90 53"
+func = "sync"
+deck = 1
+label = "SYNC_DB"
+
+[[bind]]
+msg = "90 55"
+func = "to_start"
+deck = 1
+label = "SH_CUE_DB"
+
+[[bind]]
+msg = "90 57"
+func = "loop_toggle"
+deck = 0
+label = "LOOP_PUSH_A"
+
+[[bind]]
+msg = "90 58"
+func = "loop_toggle"
+deck = 1
+label = "LOOP_PUSH_B"
+
+[[bind]]
+msg = "90 5F"
+func = "load"
+deck = 0
+label = "LOAD_A"
+
+[[bind]]
+msg = "90 60"
+func = "load"
+deck = 1
+label = "LOAD_B"
+
+[[bind]]
+msg = "90 61"
+func = "jog_touch"
+deck = 0
+label = "TOUCH_DA"
+
+[[bind]]
+msg = "90 62"
+func = "jog_touch"
+deck = 1
+label = "TOUCH_DB"
+
+[[bind]]
+msg = "B0 30"
+func = "jog_bend"
+deck = 0
+label = "JOG_DA"
+
+[[bind]]
+msg = "B0 31"
+func = "tempo"
+deck = 0
+label = "JOG_PITCH_DA"
+
+[[bind]]
+msg = "B0 32"
+func = "jog_bend"
+deck = 1
+label = "JOG_DB"
+
+[[bind]]
+msg = "B0 33"
+func = "tempo"
+deck = 1
+label = "JOG_PITCH_DB"
+
+[[bind]]
+msg = "B0 35"
+func = "filter"
+deck = 0
+label = "SH_FILTER_A_M1"
+
+[[bind]]
+msg = "B0 37"
+func = "filter"
+deck = 1
+label = "SH_FILTER_B_M1"
+
+[[bind]]
+msg = "B0 38"
+func = "browse"
+label = "BROWSE_ENC"
+
+[[bind]]
+msg = "B0 40"
+func = "volume"
+deck = 0
+label = "VOL_DA"
+
+[[bind]]
+msg = "B0 42"
+func = "volume"
+deck = 1
+label = "VOL_DB"
+
+[[bind]]
+msg = "B0 44"
+func = "eq_low"
+deck = 0
+label = "BASS_DA"
+
+[[bind]]
+msg = "B0 46"
+func = "eq_mid"
+deck = 0
+label = "MEDIUM_DA"
+
+[[bind]]
+msg = "B0 48"
+func = "gain"
+deck = 0
+label = "TREBLE_DA"
+
+[[bind]]
+msg = "B0 50"
+func = "eq_low"
+deck = 1
+label = "BASS_DB"
+
+[[bind]]
+msg = "B0 52"
+func = "eq_mid"
+deck = 1
+label = "MEDIUM_DB"
+
+[[bind]]
+msg = "B0 54"
+func = "gain"
+deck = 1
+label = "TREBLE_DB"
+
+[[bind]]
+msg = "B0 56"
+func = "crossfader"
+label = "XFADER"
+
+[[bind]]
+msg = "B0 58"
+func = "filter"
+deck = 0
+label = "SH_FILTER_A_M2"
+
+[[bind]]
+msg = "B0 60"
+func = "filter"
+deck = 0
+label = "SH_FILTER_A_M3"
+
+[[bind]]
+msg = "B0 62"
+func = "filter"
+deck = 0
+label = "SH_FILTER_A_M4"
+
+[[bind]]
+msg = "B0 64"
+func = "filter"
+deck = 1
+label = "SH_FILTER_B_M2"
+
+[[bind]]
+msg = "B0 66"
+func = "filter"
+deck = 1
+label = "SH_FILTER_B_M3"
+
+[[bind]]
+msg = "B0 68"
+func = "filter"
+deck = 1
+label = "SH_FILTER_B_M4"
+
+[[bind]]
+msg = "B0 69"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_DA"
+
+[[bind]]
+msg = "B0 6B"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SCRATCH_DB"

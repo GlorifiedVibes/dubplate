@@ -1,0 +1,354 @@
+[device]
+name = "DJControl AIR+"
+port_match = ["DJControl AIR+"]
+priority = 0
+source = "DJUCED .djm — DJControl AIR+ Default Mapping"
+notes = "Mapping with FX in BANK 1 and LOOPS in BANK2"
+
+[[bind]]
+msg = "90 05"
+func = "loop_in"
+deck = 0
+label = "LOOP_B5_DA"
+
+[[bind]]
+msg = "90 06"
+func = "loop_out"
+deck = 0
+label = "LOOP_B6_DA"
+
+[[bind]]
+msg = "90 07"
+func = "loop_half"
+deck = 0
+label = "LOOP_B7_DA"
+
+[[bind]]
+msg = "90 08"
+func = "loop_double"
+deck = 0
+label = "LOOP_B8_DA"
+
+[[bind]]
+msg = "90 0D"
+func = "loop_beats"
+deck = 0
+arg = 0
+label = "SHIFT_B5_DA"
+
+[[bind]]
+msg = "90 0E"
+func = "loop_beats"
+deck = 0
+arg = 1
+label = "SHIFT_B6_DA"
+
+[[bind]]
+msg = "90 0F"
+func = "loop_beats"
+deck = 0
+arg = 2
+label = "SHIFT_B7_DA"
+
+[[bind]]
+msg = "90 10"
+func = "loop_beats"
+deck = 0
+arg = 4
+label = "SHIFT_B8_DA"
+
+[[bind]]
+msg = "90 11"
+func = "play_pause"
+deck = 0
+label = "PLAY_DA"
+
+[[bind]]
+msg = "90 12"
+func = "cue"
+deck = 0
+label = "CUE_DA"
+
+[[bind]]
+msg = "90 1A"
+func = "load"
+deck = 0
+label = "LOAD_DA"
+
+[[bind]]
+msg = "90 1B"
+func = "jog_touch"
+deck = 0
+label = "TOUCH_DA"
+
+[[bind]]
+msg = "90 20"
+func = "loop_in"
+deck = 1
+label = "LOOP_B5_DB"
+
+[[bind]]
+msg = "90 21"
+func = "loop_out"
+deck = 1
+label = "LOOP_B6_DB"
+
+[[bind]]
+msg = "90 22"
+func = "loop_half"
+deck = 1
+label = "LOOP_B7_DB"
+
+[[bind]]
+msg = "90 23"
+func = "loop_double"
+deck = 1
+label = "LOOP_B8_DB"
+
+[[bind]]
+msg = "90 28"
+func = "loop_beats"
+deck = 1
+arg = 0
+label = "SHIFT_B5_DB"
+
+[[bind]]
+msg = "90 29"
+func = "loop_beats"
+deck = 1
+arg = 1
+label = "SHIFT_B6_DB"
+
+[[bind]]
+msg = "90 2A"
+func = "loop_beats"
+deck = 1
+arg = 2
+label = "SHIFT_B7_DB"
+
+[[bind]]
+msg = "90 2B"
+func = "loop_beats"
+deck = 1
+arg = 4
+label = "SHIFT_B8_DB"
+
+[[bind]]
+msg = "90 2C"
+func = "play_pause"
+deck = 1
+label = "Play_DB"
+
+[[bind]]
+msg = "90 2D"
+func = "cue"
+deck = 1
+label = "CUE_DB"
+
+[[bind]]
+msg = "90 35"
+func = "load"
+deck = 1
+label = "LOAD_DB"
+
+[[bind]]
+msg = "90 36"
+func = "jog_touch"
+deck = 1
+label = "TOUCH_DB"
+
+[[bind]]
+msg = "90 44"
+func = "pad"
+deck = 0
+arg = 0
+label = "HOTCUE1_DA"
+
+[[bind]]
+msg = "90 45"
+func = "pad"
+deck = 0
+arg = 1
+label = "HOTCUE2_DA"
+
+[[bind]]
+msg = "90 46"
+func = "pad"
+deck = 0
+arg = 2
+label = "HOTCUE3_DA"
+
+[[bind]]
+msg = "90 47"
+func = "pad"
+deck = 0
+arg = 3
+label = "HOTCUE4_DA"
+
+[[bind]]
+msg = "90 4C"
+func = "pad"
+deck = 1
+arg = 0
+label = "HOTCUE1_DB"
+
+[[bind]]
+msg = "90 4D"
+func = "pad"
+deck = 1
+arg = 1
+label = "HOTCUE2_DB"
+
+[[bind]]
+msg = "90 4E"
+func = "pad"
+deck = 1
+arg = 2
+label = "HOTCUE3_DB"
+
+[[bind]]
+msg = "90 4F"
+func = "pad"
+deck = 1
+arg = 3
+label = "HOTCUE4_DB"
+
+[[bind]]
+msg = "B0 01"
+func = "crossfader"
+hires = true
+label = "XFADER"
+
+[[bind]]
+msg = "B0 02"
+func = "volume"
+deck = 0
+hires = true
+label = "VOL_DA"
+
+[[bind]]
+msg = "B0 04"
+func = "tempo"
+deck = 0
+hires = true
+label = "PITCH_DA"
+
+[[bind]]
+msg = "B0 07"
+func = "eq_low"
+deck = 0
+hires = true
+label = "BASS_DA"
+
+[[bind]]
+msg = "B0 08"
+func = "gain"
+deck = 0
+hires = true
+label = "GAIN_DA"
+
+[[bind]]
+msg = "B0 0A"
+func = "tempo"
+deck = 1
+hires = true
+label = "PITCH_DB"
+
+[[bind]]
+msg = "B0 0C"
+func = "eq_mid"
+deck = 1
+hires = true
+label = "MID_DB"
+
+[[bind]]
+msg = "B0 0E"
+func = "gain"
+deck = 1
+hires = true
+label = "GAIN_DB"
+
+[[bind]]
+msg = "B0 44"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "SHIFT_HOTCUE1_DA"
+
+[[bind]]
+msg = "B0 45"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "SHIFT_HOTCUE2_DA"
+
+[[bind]]
+msg = "B0 46"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "SHIFT_HOTCUE3_DA"
+
+[[bind]]
+msg = "B0 47"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "SHIFT_HOTCUE4_DA"
+
+[[bind]]
+msg = "B0 4C"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "SHIFT_HOTCUE1_DB"
+
+[[bind]]
+msg = "B0 4D"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "SHIFT_HOTCUE2_DB"
+
+[[bind]]
+msg = "B0 4E"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "SHIFT_HOTCUE3_DB"
+
+[[bind]]
+msg = "B0 4F"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "SHIFT_HOTCUE4_DB"
+
+[[bind]]
+msg = "B0 66"
+func = "jog_bend"
+deck = 0
+label = "JOG_DA"
+
+[[bind]]
+msg = "B0 67"
+func = "jog_bend"
+deck = 1
+label = "JOG_DB"
+
+[[bind]]
+msg = "B0 68"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_DA"
+
+[[bind]]
+msg = "B0 69"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SRATCH_DB"
+
+[[bind]]
+msg = "B0 6A"
+func = "browse"
+label = "BROWSE"

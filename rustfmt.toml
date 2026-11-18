@@ -1,0 +1,4 @@
+# The code was written dense: wide lines, short bodies kept on one line. These settings keep that shape instead of
+# exploding every expression onto its own line.
+max_width = 120
+use_small_heuristics = "Max"

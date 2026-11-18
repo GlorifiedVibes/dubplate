@@ -1,0 +1,636 @@
+[device]
+name = "DJControl Inpulse 300 Mk2"
+port_match = [
+    "DJControl Inpulse 300 Mk2",
+    "DJControl Inpulse 300",
+]
+priority = 1
+source = "DJUCED .djm — Hercules DJControl Inpulse 300 Mk2"
+notes = "Default mapping for Hercules DJControl Inpulse 300 Mk2"
+
+[[bind]]
+msg = "91 02"
+func = "quantize"
+deck = 0
+label = "QUANTIZE_A"
+
+[[bind]]
+msg = "91 03"
+func = "loop_toggle"
+deck = 0
+label = "LOOP_ON_4_BEAT_A"
+
+[[bind]]
+msg = "91 05"
+func = "sync"
+deck = 0
+label = "SYNC_A"
+
+[[bind]]
+msg = "91 06"
+func = "cue"
+deck = 0
+label = "CUE_A"
+
+[[bind]]
+msg = "91 07"
+func = "play_pause"
+deck = 0
+label = "PLAY_A"
+
+[[bind]]
+msg = "91 08"
+func = "jog_touch"
+deck = 0
+label = "JOG_TOUCH_A"
+
+[[bind]]
+msg = "91 09"
+func = "loop_in"
+deck = 0
+label = "LOOP_IN_A"
+
+[[bind]]
+msg = "91 0A"
+func = "loop_out"
+deck = 0
+label = "LOOP_OUT_A"
+
+[[bind]]
+msg = "91 0B"
+func = "loop_beats"
+deck = 0
+arg = 4
+label = "LOOP_4_BEAT_A"
+
+[[bind]]
+msg = "91 0D"
+func = "load"
+deck = 0
+label = "LOAD_A"
+
+[[bind]]
+msg = "91 0E"
+func = "load"
+deck = 0
+label = "INST_DOUBLE_AA"
+
+[[bind]]
+msg = "92 02"
+func = "quantize"
+deck = 1
+label = "QUANTIZE_B"
+
+[[bind]]
+msg = "92 03"
+func = "loop_toggle"
+deck = 1
+label = "LOOP_ON_4_BEAT_B"
+
+[[bind]]
+msg = "92 05"
+func = "sync"
+deck = 1
+label = "SYNC_B"
+
+[[bind]]
+msg = "92 06"
+func = "cue"
+deck = 1
+label = "CUE_B"
+
+[[bind]]
+msg = "92 07"
+func = "play_pause"
+deck = 1
+label = "PLAY_B"
+
+[[bind]]
+msg = "92 08"
+func = "jog_touch"
+deck = 1
+label = "JOG_TOUCH_B"
+
+[[bind]]
+msg = "92 09"
+func = "loop_in"
+deck = 1
+label = "LOOP_IN_B"
+
+[[bind]]
+msg = "92 0A"
+func = "loop_out"
+deck = 1
+label = "LOOP_OUT_B"
+
+[[bind]]
+msg = "92 0B"
+func = "loop_beats"
+deck = 1
+arg = 4
+label = "LOOP_4_BEAT_B"
+
+[[bind]]
+msg = "92 0D"
+func = "load"
+deck = 1
+label = "LOAD_B"
+
+[[bind]]
+msg = "92 0E"
+func = "load"
+deck = 1
+label = "INST_DOUBLE_BA"
+
+[[bind]]
+msg = "94 06"
+func = "to_start"
+deck = 0
+label = "CUE_SH_A"
+
+[[bind]]
+msg = "94 09"
+func = "loop_half"
+deck = 0
+label = "LOOP_IN_SH_A"
+
+[[bind]]
+msg = "94 0A"
+func = "loop_double"
+deck = 0
+label = "LOOP_OUT_SH_A"
+
+[[bind]]
+msg = "95 06"
+func = "to_start"
+deck = 1
+label = "CUE_SH_B"
+
+[[bind]]
+msg = "95 09"
+func = "loop_half"
+deck = 1
+label = "LOOP_IN_SH_B"
+
+[[bind]]
+msg = "95 0A"
+func = "loop_double"
+deck = 1
+label = "LOOP_OUT_SH_B"
+
+[[bind]]
+msg = "96 00"
+func = "pad"
+deck = 0
+arg = 0
+label = "HC1_A"
+
+[[bind]]
+msg = "96 01"
+func = "pad"
+deck = 0
+arg = 1
+label = "HC2_A"
+
+[[bind]]
+msg = "96 02"
+func = "pad"
+deck = 0
+arg = 2
+label = "HC3_A"
+
+[[bind]]
+msg = "96 03"
+func = "pad"
+deck = 0
+arg = 3
+label = "HC4_A"
+
+[[bind]]
+msg = "96 04"
+func = "pad"
+deck = 0
+arg = 4
+label = "HC5_A"
+
+[[bind]]
+msg = "96 05"
+func = "pad"
+deck = 0
+arg = 5
+label = "HC6_A"
+
+[[bind]]
+msg = "96 06"
+func = "pad"
+deck = 0
+arg = 6
+label = "HC7_A"
+
+[[bind]]
+msg = "96 07"
+func = "pad"
+deck = 0
+arg = 7
+label = "HC8_A"
+
+[[bind]]
+msg = "96 08"
+func = "pad_delete"
+deck = 0
+arg = 0
+label = "DELETE_HC1_A"
+
+[[bind]]
+msg = "96 09"
+func = "pad_delete"
+deck = 0
+arg = 1
+label = "DELETE_HC2_A"
+
+[[bind]]
+msg = "96 0A"
+func = "pad_delete"
+deck = 0
+arg = 2
+label = "DELETE_HC3_A"
+
+[[bind]]
+msg = "96 0B"
+func = "pad_delete"
+deck = 0
+arg = 3
+label = "DELETE_HC4_A"
+
+[[bind]]
+msg = "96 0C"
+func = "pad_delete"
+deck = 0
+arg = 4
+label = "DELETE_HC5_A"
+
+[[bind]]
+msg = "96 0D"
+func = "pad_delete"
+deck = 0
+arg = 5
+label = "DELETE_HC6_A"
+
+[[bind]]
+msg = "96 0E"
+func = "pad_delete"
+deck = 0
+arg = 6
+label = "DELETE_HC7_A"
+
+[[bind]]
+msg = "96 0F"
+func = "pad_delete"
+deck = 0
+arg = 7
+label = "DELETE_HC8_A"
+
+[[bind]]
+msg = "97 00"
+func = "pad"
+deck = 1
+arg = 0
+label = "HC1_B"
+
+[[bind]]
+msg = "97 01"
+func = "pad"
+deck = 1
+arg = 1
+label = "HC2_B"
+
+[[bind]]
+msg = "97 02"
+func = "pad"
+deck = 1
+arg = 2
+label = "HC3_B"
+
+[[bind]]
+msg = "97 03"
+func = "pad"
+deck = 1
+arg = 3
+label = "HC4_B"
+
+[[bind]]
+msg = "97 04"
+func = "pad"
+deck = 1
+arg = 4
+label = "HC5_B"
+
+[[bind]]
+msg = "97 05"
+func = "pad"
+deck = 1
+arg = 5
+label = "HC6_B"
+
+[[bind]]
+msg = "97 06"
+func = "pad"
+deck = 1
+arg = 6
+label = "HC7_B"
+
+[[bind]]
+msg = "97 07"
+func = "pad"
+deck = 1
+arg = 7
+label = "HC8_B"
+
+[[bind]]
+msg = "97 08"
+func = "pad_delete"
+deck = 1
+arg = 0
+label = "DELETE_HC1_B"
+
+[[bind]]
+msg = "97 09"
+func = "pad_delete"
+deck = 1
+arg = 1
+label = "DELETE_HC2_B"
+
+[[bind]]
+msg = "97 0A"
+func = "pad_delete"
+deck = 1
+arg = 2
+label = "DELETE_HC3_B"
+
+[[bind]]
+msg = "97 0B"
+func = "pad_delete"
+deck = 1
+arg = 3
+label = "DELETE_HC4_B"
+
+[[bind]]
+msg = "97 0C"
+func = "pad_delete"
+deck = 1
+arg = 4
+label = "DELETE_HC5_B"
+
+[[bind]]
+msg = "97 0D"
+func = "pad_delete"
+deck = 1
+arg = 5
+label = "DELETE_HC6_B"
+
+[[bind]]
+msg = "97 0E"
+func = "pad_delete"
+deck = 1
+arg = 6
+label = "DELETE_HC7_B"
+
+[[bind]]
+msg = "97 0F"
+func = "pad_delete"
+deck = 1
+arg = 7
+label = "DELETE_HC8_B"
+
+[[bind]]
+msg = "B0 00"
+func = "crossfader"
+hires = true
+label = "XFADER"
+
+[[bind]]
+msg = "B0 01"
+func = "browse"
+label = "BROWSE"
+
+[[bind]]
+msg = "B1 00"
+func = "volume"
+deck = 0
+hires = true
+label = "VOL_A"
+
+[[bind]]
+msg = "B1 01"
+func = "filter"
+deck = 0
+hires = true
+label = "FILTER_A"
+
+[[bind]]
+msg = "B1 02"
+func = "eq_low"
+deck = 0
+hires = true
+label = "LOW_A"
+
+[[bind]]
+msg = "B1 03"
+func = "eq_mid"
+deck = 0
+hires = true
+label = "MID_A"
+
+[[bind]]
+msg = "B1 04"
+func = "eq_high"
+deck = 0
+hires = true
+label = "HIGH_A"
+
+[[bind]]
+msg = "B1 05"
+func = "gain"
+deck = 0
+hires = true
+label = "GAIN_A"
+
+[[bind]]
+msg = "B1 08"
+func = "tempo"
+deck = 0
+hires = true
+label = "PITCH_A"
+
+[[bind]]
+msg = "B1 09"
+func = "jog_bend"
+deck = 0
+label = "JOG_bend_A"
+
+[[bind]]
+msg = "B1 0A"
+func = "jog_scratch"
+deck = 0
+label = "JOG_SCRATCH_A"
+
+[[bind]]
+msg = "B1 0B"
+func = "jog_bend"
+deck = 0
+label = "PAD_bend_A"
+
+[[bind]]
+msg = "B1 0C"
+func = "jog_scratch"
+deck = 0
+label = "PAD_SCRATCH_A"
+
+[[bind]]
+msg = "B2 00"
+func = "volume"
+deck = 1
+hires = true
+label = "VOL_B"
+
+[[bind]]
+msg = "B2 01"
+func = "filter"
+deck = 1
+hires = true
+label = "FILTER_B"
+
+[[bind]]
+msg = "B2 02"
+func = "eq_low"
+deck = 1
+hires = true
+label = "LOW_B"
+
+[[bind]]
+msg = "B2 03"
+func = "eq_mid"
+deck = 1
+hires = true
+label = "MID_B"
+
+[[bind]]
+msg = "B2 04"
+func = "eq_high"
+deck = 1
+hires = true
+label = "HIGH_B"
+
+[[bind]]
+msg = "B2 05"
+func = "gain"
+deck = 1
+hires = true
+label = "GAIN_B"
+
+[[bind]]
+msg = "B2 08"
+func = "tempo"
+deck = 1
+hires = true
+label = "PITCH_B"
+
+[[bind]]
+msg = "B2 09"
+func = "jog_bend"
+deck = 1
+label = "JOG_bend_B"
+
+[[bind]]
+msg = "B2 0A"
+func = "jog_scratch"
+deck = 1
+label = "JOG_SCRATCH_B"
+
+[[bind]]
+msg = "B2 0B"
+func = "jog_bend"
+deck = 1
+label = "PAD_bend_B"
+
+[[bind]]
+msg = "B2 0C"
+func = "jog_scratch"
+deck = 1
+label = "PAD_SCRATCH_B"
+
+[[bind]]
+msg = "B3 01"
+func = "browse"
+arg = 8
+label = "BROWSE_FAST"
+
+[[bind]]
+msg = "B4 01"
+func = "filter"
+deck = 0
+hires = true
+label = "FILTER_C"
+
+[[bind]]
+msg = "B4 02"
+func = "eq_low"
+deck = 0
+hires = true
+label = "LOW_C"
+
+[[bind]]
+msg = "B4 03"
+func = "eq_mid"
+deck = 0
+hires = true
+label = "MID_C"
+
+[[bind]]
+msg = "B4 04"
+func = "eq_high"
+deck = 0
+hires = true
+label = "HIGH_C"
+
+[[bind]]
+msg = "B4 05"
+func = "gain"
+deck = 0
+hires = true
+label = "GAIN_C"
+
+[[bind]]
+msg = "B5 01"
+func = "filter"
+deck = 1
+hires = true
+label = "FILTER_D"
+
+[[bind]]
+msg = "B5 02"
+func = "eq_low"
+deck = 1
+hires = true
+label = "LOW_D"
+
+[[bind]]
+msg = "B5 03"
+func = "eq_mid"
+deck = 1
+hires = true
+label = "MID_D"
+
+[[bind]]
+msg = "B5 04"
+func = "eq_high"
+deck = 1
+hires = true
+label = "HIGH_D"
+
+[[bind]]
+msg = "B5 05"
+func = "gain"
+deck = 1
+hires = true
+label = "GAIN_D"
