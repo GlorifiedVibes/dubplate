@@ -592,10 +592,14 @@ impl Plugin {
                 .and_then(|c| c.as_com_ref::<IParameterChanges>())
                 .map_or(std::ptr::null_mut(), |r| r.as_ptr());
             let mut ctx: ProcessContext = std::mem::zeroed();
-            // (the headers' enums are signed on Windows and unsigned elsewhere, hence the casts)
-            ctx.state = ProcessContext_::StatesAndFlags_::kTempoValid
-                | ProcessContext_::StatesAndFlags_::kTimeSigValid
-                | if self.playing { ProcessContext_::StatesAndFlags_::kPlaying } else { 0 };
+            // The headers' enums are signed on Windows and unsigned elsewhere, hence the casts, which clippy calls
+            // unnecessary on Linux (removing them breaks the Windows build).
+            #[allow(clippy::unnecessary_cast)]
+            {
+                ctx.state = (ProcessContext_::StatesAndFlags_::kTempoValid as u32)
+                    | (ProcessContext_::StatesAndFlags_::kTimeSigValid as u32)
+                    | if self.playing { ProcessContext_::StatesAndFlags_::kPlaying as u32 } else { 0 };
+            }
             ctx.sampleRate = self.sample_rate;
             ctx.projectTimeSamples = self.position;
             ctx.tempo = self.tempo;
